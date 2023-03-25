@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  background-image: url(https://images.pexels.com/photos/907485/pexels-photo-907485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  max-width: 80%;
+  height: auto;
+  margin: 2rem auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.form-and-todo-box {
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+
+.form-and-todo-box .input-and-button {
+  height: 4rem;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+}
+
+.form-and-todo-box .input-and-button input {
+  width: 92%;
+  height: 100%;
+  outline: none;
+  border: none;
+  margin: 0 5px;
+  font-size: 1.5rem;
+
+  /* border: 2px solid #f92c0f; */
+}
+
+.form-and-todo-box .input-and-button .button {
+  width: 15%;
+  height: 100%;
+  background-color: #0fef3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1px;
+}
+
+.form-and-todo-box .input-and-button .button.edit {
+  width: auto;
+}
+
+.form-and-todo-box .input-and-button .button button {
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #0fef3f;
+  background-color: transparent;
+  color: #fff;
+}
+
+.todo {
+  margin: 1.4rem 0px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  padding-bottom: 1rem;
+}
+
+/* .todo input {
+  margin-right: 1rem;
+} */
+@media (max-width: 710px) {
+  input::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 560px) {
+  input::placeholder {
+    font-size: 1rem;
+  }
+}
+
+.todo span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.todo .edit-and-delete {
+  display: flex;
+  cursor: pointer;
+}
+
+.delete-all {
+  padding: 10px;
+  font-size: 1.5rem;
+  background-color: red;
+  cursor: pointer;
+}
+.statusbox {
+  width: 1.5rem;
+  height: 1.5rem;
+}
