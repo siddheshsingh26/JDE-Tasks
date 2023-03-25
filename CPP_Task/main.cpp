@@ -6,7 +6,11 @@ The labyrinth is stored in a text file, where '.' represents a valid path
 and '#' represents a wall. The output of the program is the length of
 the longest path and the labyrinth with the longest path marked.
 */
-#include <bits/stdc++.h>
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <unordered_map>
+#include <vector>
 using namespace std;
 
 
@@ -32,11 +36,7 @@ bool is_valid_move(int x, int y)
 	return x >= 0 && x < labyrinth.size() && y >= 0 && y < labyrinth[0].size() && labyrinth[x][y] == '.';
 }
 
-/** @brief hjkhghfhjkghgj.
-
-fhjhjdxfcgvhbjkngvhbjnkm bhj nhjbn 
-jhbn bhjnm
-
+/** 
 Run depth-first search to find the longest path starting at (x,y)
 
 @param x the current x-coordinate
